@@ -1,0 +1,29 @@
+---
+title: "The curve"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+
+
+## This is a normal curve 
+
+
+
+
+
+```{r}
+x <- seq(-4, 4, length=100)
+y <- dnorm(x)
+plot(x,y, type = "l", lwd = 2, axes = FALSE, xlab = "", ylab = "",main= "The  Normal Curve")
+axis(1, at = -3:3, labels = c("-3s", "-2s", "-1s", "mean", "1s", "2s", "3s"))
+
+```
